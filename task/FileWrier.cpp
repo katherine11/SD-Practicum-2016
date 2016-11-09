@@ -3,7 +3,7 @@
 /*
 FileWriter::FileWriter()
 {
-	
+
 }
 
 FileWriter::~FileWriter()

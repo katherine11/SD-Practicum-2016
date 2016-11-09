@@ -10,31 +10,36 @@ const size_t DEVICES_SIZE = 20;
 
 InquiryProvider::InquiryProvider()
 {
-	this->devices = new Device[DEVICES_SIZE];
-	for (size_t index = 0; index < DEVICES_SIZE; index++)
-	{
-		int randomNumber = rand() % 100;
-		if (randomNumber <= 30)
-		{
-			this->devices[index] = PC();
-		}
-		else
-		{
-			if (randomNumber <= 60)
-			{
-				this->devices[index] = Laptop();
-			}
-			else
-			{
-				this->devices[index] = Smartphone();
-			}
-		}
-	}
+	//this->devices = new Device[DEVICES_SIZE];
+	//for (size_t index = 0; index < DEVICES_SIZE; index++)
+	//{
+		//int randomNumber = rand() % 100;
+		//if (randomNumber <= 30)
+		//{
+			//this->devices[index] = PC();
+		//}
+		//else
+		//{
+			//if (randomNumber <= 60)
+			//{
+				//this->devices[index] = Laptop();
+			//}
+			//else
+			//{
+				//this->devices[index] = Smartphone();
+			//}
+		//}
+	//}
 }
 
 InquiryProvider::~InquiryProvider()
 {
-	delete[] this->devices;
+ // for(int index = 0; index < DEVICES_SIZE;index++)
+  //{
+   // delete[] this->devices[index];
+  //}
+
+	//delete[] this->devices;
 }
 
 Device* InquiryProvider::getDevicesBy(char type)
@@ -105,7 +110,7 @@ Device* InquiryProvider::getDevicesBy(char *brand, char *model)
 		{
 			bool condition = strcmp(this->devices[index].getBrand(), brand) == 0
 				&& strcmp(this->devices[index].getModel(), model) == 0;
-			
+
 			if (condition)
 			{
 				result[resultSize++] = this->devices[index];
