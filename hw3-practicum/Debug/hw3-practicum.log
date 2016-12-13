@@ -1,0 +1,6 @@
+﻿  Tree.cpp
+  Demo.cpp
+f:\katherine\informationsystems\programming\sd\hw3-practicum\hw3-practicum\demo.cpp(14): warning C4018: '<' : signed/unsigned mismatch
+  Generating Code...
+f:\katherine\informationsystems\programming\sd\hw3-practicum\hw3-practicum\tree.cpp(17): error C4716: 'Tree::operator=' : must return a value
+f:\katherine\informationsystems\programming\sd\hw3-practicum\hw3-practicum\tree.cpp(33): error C4716: 'Tree::isLeaf' : must return a value
