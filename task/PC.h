@@ -20,5 +20,5 @@ public:
 	void copy(PC pc);
 	void destroy();
 
-	
+
 };

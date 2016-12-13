@@ -1,7 +1,7 @@
 #pragma once
 #include "Device.h"
 
-class InquiryProvider 
+class InquiryProvider
 {
 private:
 	Device *devices;

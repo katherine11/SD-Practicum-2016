@@ -22,7 +22,7 @@ public:
 
 	void copy(const Device & device);
 	void destroy();
-	void printCharArray(std::ostream &os, const char * charArray);
+	void printCharArray(std::ostream &os, char * charArray);
 
 	friend std::ostream & operator << (std::ostream &os, const Device &device);
 	friend std::istream & operator >> (std::istream &is, Device &device);
