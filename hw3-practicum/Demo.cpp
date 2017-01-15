@@ -14,7 +14,7 @@ bool correctInput(const std::string& input)
 	for (int index = 0; index < input.length(); ++index)
 	{
 		char currentChar = inputData[index];
-		
+
 		if (currentChar == '{' && parentesisStorage.empty())
 		{
 			return false;
@@ -26,7 +26,7 @@ bool correctInput(const std::string& input)
 		}
 
 		if (currentChar == ')' || currentChar == '}'){
-			
+
 			if (parentesisStorage.empty())
 			{
 				return false;
@@ -73,7 +73,7 @@ int main()
 	//add another case!!;
 	std::string str1 = "(5{9{}(1{(4{})(12{})(42{})})})";
 	std::string str2 = "(5{(9{})(1{(4{})(12{})(42{})})})";
-	
+
 	std::cout << correctInput(str1) << std::endl;
 	std::cout << correctInput(str2) << std::endl;
 
